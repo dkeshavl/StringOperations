@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.outerBorder {
+    height: 312px;
+    min-width: 561px;
+    background-color: black;
+    border: 5px solid rgba(128, 128, 128, 0.363);
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.outerBorder:hover {
+    box-shadow: 0 0 30px rgb(69, 69, 69);
+}
+
+#enteredString {
+    width: 455px;
+    padding: 10px 164px 10px 10px;
+    margin: 10px 0 0 15px;
+    background-color: black;
+    border: 2px solid rgba(128, 128, 128, 0.363);
+    border-radius: 5px;
+}
+
+#enteredString:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(128, 128, 128, 0.363);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(38, 38, 38);
+    cursor: pointer;
+}
+
+.inner {
+    min-height: 249px;
+    min-width: 451px;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.left>div,.right>div {
+    height: 45px;
+    width: 252px;
+    border: 2px solid rgba(128, 128, 128, 0.363);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 10px 10px 5px;
+}
+#low,#upp,#cam {
+    display: inline-block;
+    width: 140px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    scrollbar-width:none;
+}
